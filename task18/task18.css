@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin: 30px auto;
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 80%;
+    height: 500px;
+}
+
+input {
+    display: inline-block;
+
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+}
+
+button {
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 30px;
+
+    background-color: #aaff55;
+}
+
+#leftOut {
+    margin-left: 50px;
+}
+
+.numQueue {
+    float: left;
+
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    
+    line-height: 50px;
+    text-align: center;
+
+    color: #fff;
+    background-color: red;
+    cursor: pointer;
+
+    /*animation: widthAnim .5s ease-in-out;*/
+}
+
+@keyframes widthAnim {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50px;
+    }
+}

@@ -1,0 +1,71 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tagsInput {
+    margin: 10px;
+}
+
+.tagsInput input {
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid blue;
+    box-shadow: 2px 2px 0.1px blue;
+
+    width: 200px;
+    height: 30px;
+}
+
+#hobbyInput {
+    display: block;
+    margin: 30px;
+}
+
+button {
+    display: inline-block;
+    border-radius: 5px;
+    height: 30px;
+    background-color: #fff;
+}
+
+
+
+.hobby {
+    float: left;
+}
+
+#tagsShow {
+    overflow: hidden;
+}
+
+.show {
+    float: left;
+
+    margin-left: 10px;
+    margin-top: 30px;
+    height: 50px;
+
+    line-height: 50px;
+    text-align: center;
+
+    color: #fff;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    /*animation: widthAnim .5s ease-in-out;*/
+}
+
+.tagsShow {
+    background-color: #8e96ff;
+}
+
+.hobbyShow {
+    background-color: #F4A460;
+}

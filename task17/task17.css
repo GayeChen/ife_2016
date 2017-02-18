@@ -1,0 +1,75 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#formGraTime {
+    border-radius: 20px;
+    margin: 10px auto;
+    width: 90%;
+}
+
+#formGraTime div {
+    float: left;
+
+    margin: 20px;
+    border: 1px solid #2F4F4F;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+#formGraTime div.selected {
+    background-color: darkslategray;
+    color: #fff;
+}
+
+#citySelect {
+    margin-left: 100px;
+    margin-top: 20px;
+
+    width: 100px;
+    height: 30px;
+}
+
+.aqiChartWrap {
+    position: relative;
+
+    margin: 0 auto;
+    border: 2px solid #2F4F4F;
+    border-radius: 20px;
+    width: 90%;
+    height: 600px;
+
+}
+
+.header {
+    clear: both;
+    width: 400px;
+    margin: 10px auto;
+}
+
+#aqiDisplay div:not(.header) {
+    position: absolute;
+
+    bottom: 0px;
+    border: 1px solid red;
+    animation: heightAnim .5s ease-in-out;
+}
+
+@keyframes heightAnim {
+    0% {
+        bottom: -300px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+

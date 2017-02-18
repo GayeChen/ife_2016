@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task13</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            margin: 40px auto;
+            width: 500px;
+
+            background-color: chartreuse;
+        }
+
+        .main {
+            border: 1px solid red;
+            border-radius: 10px;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div>
+        <label for="aqiInput">请输入今天北京空气质量：<input type="text" id="aqiInput"></label>
+        <button id="button">確認填寫</button>
+    </div>
+    <div>你輸入的值是：<span id="aqiDisplay">尚無錄入</span></div>
+</div>
+<script>
+    var aqiInput = document.getElementById('aqiInput'),
+        aqiDisplay = document.getElementById('aqiDisplay'),
+        button = document.getElementById('button');
+
+    (function () {
+        button.onclick = function () {
+            aqiDisplay.innerText = aqiInput.value;
+        }
+    })();
+</script>
+</body>
+</html>
+
+<!--
+try {
+if (aqiInput.value.match(regex)) {
+throw "请不要输入英文"
+} else if (aqiInput.value > 1000) {
+throw "数值太大，不合格"
+} else {
+
+}
+} catch (err){
+alert(err);
+}-->
